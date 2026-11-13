@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pennywhistle Lane Bakehouse — sample landing page</title>
+<meta name="description" content="Sample one-page landing page for a fictional neighbourhood bakery.">
+<link rel="stylesheet" href="../../style.css">
+</head>
+<body class="bakery">
+
+<!-- Sample bar: the only place the studio name appears on this page. -->
+<div class="sample-bar">
+  <div class="wrap">
+    <span><strong>SAMPLE</strong> One-page landing page by Tidy Studio. The bakery is fictional; it is not a real business.</span>
+    <a href="../../index.html">← Back to the studio</a>
+  </div>
+</div>
+
+<header class="bk-header">
+  <div class="wrap">
+    <a class="bk-brand" href="#top">Pennywhistle Lane Bakehouse</a>
+    <nav class="bk-nav" aria-label="Bakery">
+      <a href="#menu">Today's bakes</a>
+      <a href="#story">Our day</a>
+      <a href="#visit">Visit</a>
+      <a class="btn btn-small" href="#order">Pre-order</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="bk-hero">
+    <div class="wrap">
+      <div>
+        <h1>Bread worth getting up <em>early</em> for.</h1>
+        <p>Slow-fermented sourdough, butter-laminated pastries and proper coffee, baked every morning in a small shop at the end of Pennywhistle Lane.</p>
+        <div class="hero-actions">
+          <a class="btn" href="#order">Pre-order for tomorrow</a>
+          <a class="btn btn-ghost" href="#menu">See today's bakes</a>
+        </div>
+        <p class="bk-open">Open Tuesday to Sunday from 7:00</p>
+      </div>
+      <svg class="bk-art" viewBox="0 0 440 400" role="img" aria-label="Illustration of a round loaf and a baguette on a counter">
+        <circle cx="220" cy="190" r="170" fill="#f1dfc0"/>
+        <circle cx="330" cy="80" r="34" fill="#f7c873"/>
+        <rect x="50" y="300" width="340" height="14" rx="7" fill="#2b2118"/>
+        <g transform="rotate(-24 300 200)">
+          <rect x="262" y="70" width="64" height="250" rx="32" fill="#d79a55"/>
+          <path d="M276 118l34 14M276 162l34 14M276 206l34 14M276 250l34 14" stroke="#f6e3c2" stroke-width="6" stroke-linecap="round"/>
+        </g>
+        <ellipse cx="190" cy="252" rx="128" ry="34" fill="#2b2118" opacity=".1"/>
+        <path d="M62 244c0-70 56-116 128-116s128 46 128 116c0 34-36 56-128 56S62 278 62 244z" fill="#b9733a"/>
+        <path d="M82 240c0-56 46-94 108-94s108 38 108 94" fill="none" stroke="#d79a55" stroke-width="14" stroke-linecap="round" opacity=".7"/>
+        <path d="M132 176c22 22 30 52 26 86M190 162c14 28 16 62 8 100M246 176c8 26 6 56-8 84" fill="none" stroke="#f6e3c2" stroke-width="7" stroke-linecap="round"/>
+        <g fill="#2b2118" opacity=".35"><circle cx="96" cy="330" r="3"/><circle cx="120" cy="342" r="2.5"/><circle cx="342" cy="334" r="3"/><circle cx="310" cy="346" r="2.5"/></g>
+      </svg>
+    </div>
+  </section>
+
+  <section class="bk-strip" aria-label="What makes us different">
+    <div class="wrap">
+      <ul>
+        <li><h3>Baked this morning</h3><p>Everything on the counter came out of the oven today. What is left at closing goes to the neighbours.</p></li>
+        <li><h3>Three ingredients</h3><p>Our sourdough is flour, water and salt, and about thirty hours of patience.</p></li>
+        <li><h3>Order ahead</h3><p>Reserve by 6 pm and your loaf is bagged with your name on it by 7:30 the next morning.</p></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section" id="menu">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Today's bakes</span>
+        <h2>A short menu, done carefully.</h2>
+        <p>The counter changes with the season. These four are always there.</p>
+      </div>
+
+      <div class="bk-menu">
+        <article class="bk-item">
+          <svg viewBox="0 0 200 130" aria-hidden="true"><rect width="200" height="130" fill="#f1dfc0"/><path d="M40 86c0-32 26-52 60-52s60 20 60 52c0 14-18 22-60 22S40 100 40 86z" fill="#b9733a"/><path d="M76 54c10 12 12 26 10 42M100 48c6 14 6 32 2 48M124 54c4 14 2 28-6 42" fill="none" stroke="#f6e3c2" stroke-width="4" stroke-linecap="round"/></svg>
+          <h3>Lane sourdough <span>$8</span></h3>
+          <p>Our house loaf. Dark crust, open crumb, keeps for four days.</p>
+        </article>
+        <article class="bk-item">
+          <svg viewBox="0 0 200 130" aria-hidden="true"><rect width="200" height="130" fill="#f6e6cf"/><path d="M38 92c6-34 34-56 62-56s56 22 62 56c-18 8-40 4-62 4s-44 4-62-4z" fill="#dba24f"/><path d="M70 58l-8 34M90 46l-4 50M110 46l4 50M130 58l8 34" stroke="#b9733a" stroke-width="4" stroke-linecap="round"/></svg>
+          <h3>Butter croissant <span>$4.50</span></h3>
+          <p>Three days in the making. Shatters when you bite it, as it should.</p>
+        </article>
+        <article class="bk-item">
+          <svg viewBox="0 0 200 130" aria-hidden="true"><rect width="200" height="130" fill="#f1dfc0"/><circle cx="100" cy="66" r="42" fill="#c98548"/><path d="M100 66m-26 0a26 26 0 1 0 52 0a26 26 0 1 0-52 0M100 66m-12 0a12 12 0 1 0 24 0" fill="none" stroke="#6b3d1e" stroke-width="5" stroke-linecap="round"/><g fill="#fff8ea"><circle cx="84" cy="44" r="2.5"/><circle cx="120" cy="50" r="2.5"/><circle cx="126" cy="80" r="2.5"/><circle cx="78" cy="86" r="2.5"/></g></svg>
+          <h3>Cardamom bun <span>$4</span></h3>
+          <p>Soft, knotted and sticky, with freshly ground cardamom and pearl sugar.</p>
+        </article>
+        <article class="bk-item">
+          <svg viewBox="0 0 200 130" aria-hidden="true"><rect width="200" height="130" fill="#f6e6cf"/><path d="M52 44h96l-10 58a8 8 0 0 1-8 6H70a8 8 0 0 1-8-6z" fill="#fffaf1" stroke="#2b2118" stroke-width="4" stroke-linejoin="round"/><path d="M57 62h86" stroke="#b4532a" stroke-width="10"/><path d="M88 30c-6-8 6-10 0-18M108 30c-6-8 6-10 0-18" fill="none" stroke="#2b2118" stroke-width="3" stroke-linecap="round" opacity=".5"/></svg>
+          <h3>Filter coffee <span>$3</span></h3>
+          <p>A rotating single-origin roast, brewed by the batch. Refills are a dollar.</p>
+        </article>
+      </div>
+      <p class="bk-note">Also most days: seeded rye, focaccia by the slice, oat cookies and a weekend-only fruit galette.</p>
+    </div>
+  </section>
+
+  <section class="section bk-story" id="story">
+    <div class="wrap">
+      <div>
+        <span class="eyebrow">Our day</span>
+        <h2>We start while the street is still asleep.</h2>
+        <p>Good bread cannot be hurried. Our dough is mixed by hand the afternoon before, rests overnight in the cool room and goes into a stone-deck oven before sunrise.</p>
+        <p>We bake in small batches and stop when the flour for the day is used up. Some mornings that means the croissants are gone by ten. We would rather sell out than sell yesterday's.</p>
+      </div>
+      <ol class="bk-day">
+        <li><time>4:30</time><strong>Ovens on</strong><span>The overnight dough is shaped and scored.</span></li>
+        <li><time>6:15</time><strong>First loaves out</strong><span>Sourdough and rye cool on the racks.</span></li>
+        <li><time>7:00</time><strong>Doors open</strong><span>Pastries are still warm. Pre-orders are ready from 7:30.</span></li>
+        <li><time>14:00</time><strong>Tomorrow's dough</strong><span>We mix, fold and let time do the rest.</span></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section" id="visit">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Visit</span>
+        <h2>Find us at the end of the lane.</h2>
+      </div>
+      <div class="bk-visit">
+        <div class="bk-panel">
+          <h3>Opening hours</h3>
+          <table class="bk-hours">
+            <tr><th scope="row">Monday</th><td>Closed</td></tr>
+            <tr><th scope="row">Tuesday – Friday</th><td>7:00 – 15:00</td></tr>
+            <tr><th scope="row">Saturday</th><td>7:00 – 16:00</td></tr>
+            <tr><th scope="row">Sunday</th><td>8:00 – 13:00</td></tr>
+          </table>
+        </div>
+        <div class="bk-panel">
+          <h3>Where we are</h3>
+          <address>
+            <strong>12 Pennywhistle Lane</strong><br>
+            Alderbrook (a made-up town)<br>
+            Phone 555-0142
+          </address>
+          <svg class="bk-map" viewBox="0 0 400 170" role="img" aria-label="Simple map showing the bakery at the end of Pennywhistle Lane">
+            <rect width="400" height="170" fill="#f1e6d2"/>
+            <rect x="24" y="18" width="110" height="52" rx="6" fill="#e3d5ba"/><rect x="24" y="106" width="150" height="48" rx="6" fill="#e3d5ba"/>
+            <rect x="262" y="18" width="114" height="52" rx="6" fill="#d5e0c4"/><rect x="216" y="106" width="76" height="48" rx="6" fill="#e3d5ba"/>
+            <path d="M0 88h400M196 0v170" stroke="#fffaf1" stroke-width="16"/>
+            <path d="M196 88h118" stroke="#b4532a" stroke-width="3" stroke-dasharray="6 6"/>
+            <circle cx="326" cy="88" r="12" fill="#b4532a"/><circle cx="326" cy="88" r="4.5" fill="#fffaf1"/>
+            <text x="326" y="124" text-anchor="middle" font-family="Georgia, serif" font-size="13" fill="#2b2118">Bakehouse</text>
+            <text x="100" y="92" text-anchor="middle" font-family="Georgia, serif" font-size="11" fill="#6f5f50">Pennywhistle Lane</text>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bk-cta bk-story" id="order">
+    <div class="wrap" style="display:block">
+      <h2>Reserve tomorrow's loaf.</h2>
+      <p>Call before 6 pm, tell us what you would like, and it will be waiting behind the counter with your name on it.</p>
+      <a class="btn" href="tel:5550142">Call 555-0142</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="bk-footer">
+  <div class="wrap">
+    <p>Pennywhistle Lane Bakehouse is a fictional business created as a design sample. The address, phone number and prices are not real.</p>
+  </div>
+</footer>
+
+</body>
+</html>

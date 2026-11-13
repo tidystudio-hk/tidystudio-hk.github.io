@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sales dashboard — sample</title>
+<meta name="description" content="Mock sales dashboard showing what a Google Sheets dashboard delivers. All data is made up.">
+<link rel="stylesheet" href="../../style.css">
+</head>
+<body class="dash">
+
+<!-- Sample bar: the only place the studio name appears on this page. -->
+<div class="sample-bar">
+  <div class="wrap">
+    <span><strong>SAMPLE</strong> Mock of a Google Sheets dashboard by Tidy Studio. The shop and all numbers are made up.</span>
+    <a href="../../index.html">← Back to the studio</a>
+  </div>
+</div>
+
+<!--
+  Made-up data used on this page (fictional homeware shop, one calendar year).
+  Monthly revenue, $k: Jan 18.2, Feb 16.9, Mar 21.4, Apr 23.0, May 24.6, Jun 22.1,
+                       Jul 25.8, Aug 27.3, Sep 26.0, Oct 29.4, Nov 33.7, Dec 38.1  (total 306.5)
+  Categories, $k:      Kitchen 116.5, Living 82.8, Bedroom 55.2, Outdoor 33.7, Other 18.3
+  Orders: 5,108        Average order value: $60.00
+-->
+
+<main class="dash-wrap">
+
+  <header class="dash-head">
+    <div>
+      <h1>Sales overview <span class="stamp">SAMPLE</span></h1>
+      <p>Fernwick Home, a fictional online homeware shop · full year, January to December</p>
+    </div>
+    <div class="chips" aria-label="Filters shown in the real sheet">
+      <span class="chip">Period <b>Full year</b></span>
+      <span class="chip">Channel <b>All</b></span>
+      <span class="chip">Currency <b>USD</b></span>
+    </div>
+  </header>
+
+  <section class="kpis" aria-label="Key numbers">
+    <div class="panel kpi">
+      <h2>Revenue</h2>
+      <p class="value">$306.5k</p>
+      <p class="note">Sum of all orders in the period</p>
+      <svg viewBox="0 0 200 34" preserveAspectRatio="none" aria-hidden="true"><polyline fill="none" stroke="#2456c7" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" points="2,23 20,24 38,20 56,18 73,17 91,19 109,16 127,14 145,15 162,12 180,8 198,3"/></svg>
+    </div>
+    <div class="panel kpi">
+      <h2>Orders</h2>
+      <p class="value">5,108</p>
+      <p class="note">About 426 a month on average</p>
+      <svg viewBox="0 0 200 34" preserveAspectRatio="none" aria-hidden="true"><polyline fill="none" stroke="#2456c7" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" points="2,24 20,25 38,21 56,19 73,18 91,20 109,17 127,15 145,16 162,13 180,9 198,4"/></svg>
+    </div>
+    <div class="panel kpi">
+      <h2>Average order value</h2>
+      <p class="value">$60.00</p>
+      <p class="note">Revenue divided by orders</p>
+      <svg viewBox="0 0 200 34" preserveAspectRatio="none" aria-hidden="true"><polyline fill="none" stroke="#2456c7" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" points="2,18 20,19 38,17 56,18 73,16 91,18 109,17 127,16 145,18 162,16 180,15 198,14"/></svg>
+    </div>
+    <div class="panel kpi">
+      <h2>Best month</h2>
+      <p class="value">December</p>
+      <p class="note">$38.1k, 12% of the year</p>
+      <svg viewBox="0 0 200 34" preserveAspectRatio="none" aria-hidden="true"><g fill="#9db5ea"><rect x="2" y="18" width="12" height="16"/><rect x="19" y="19" width="12" height="15"/><rect x="36" y="15" width="12" height="19"/><rect x="53" y="14" width="12" height="20"/><rect x="70" y="12" width="12" height="22"/><rect x="87" y="14" width="12" height="20"/><rect x="104" y="11" width="12" height="23"/><rect x="121" y="10" width="12" height="24"/><rect x="138" y="11" width="12" height="23"/><rect x="155" y="8" width="12" height="26"/><rect x="172" y="4" width="12" height="30"/></g><rect x="186" y="0" width="12" height="34" fill="#2456c7"/></svg>
+    </div>
+  </section>
+
+  <section class="dash-grid">
+    <div class="panel">
+      <h2>Monthly revenue</h2>
+      <p class="panel-sub">Thousands of US dollars. The strongest month is highlighted.</p>
+      <div class="chart-scroll">
+        <svg class="chart" viewBox="0 0 640 290" role="img" aria-label="Bar chart of monthly revenue rising from 18.2 thousand dollars in January to 38.1 thousand in December">
+          <g class="grid">
+            <line x1="44" x2="620" y1="250" y2="250" stroke="#b9bfca"/>
+            <line x1="44" x2="620" y1="192.5" y2="192.5"/>
+            <line x1="44" x2="620" y1="135" y2="135"/>
+            <line x1="44" x2="620" y1="77.5" y2="77.5"/>
+            <line x1="44" x2="620" y1="20" y2="20"/>
+          </g>
+          <g font-size="12" text-anchor="end">
+            <text x="36" y="254">0</text><text x="36" y="196.5">10</text><text x="36" y="139">20</text><text x="36" y="81.5">30</text><text x="36" y="24">40</text>
+          </g>
+          <g class="bar">
+            <rect x="53" y="145" width="30" height="105" rx="3"/>
+            <rect x="101" y="153" width="30" height="97" rx="3"/>
+            <rect x="149" y="127" width="30" height="123" rx="3"/>
+            <rect x="197" y="118" width="30" height="132" rx="3"/>
+            <rect x="245" y="109" width="30" height="141" rx="3"/>
+            <rect x="293" y="123" width="30" height="127" rx="3"/>
+            <rect x="341" y="102" width="30" height="148" rx="3"/>
+            <rect x="389" y="93" width="30" height="157" rx="3"/>
+            <rect x="437" y="100" width="30" height="150" rx="3"/>
+            <rect x="485" y="81" width="30" height="169" rx="3"/>
+            <rect x="533" y="56" width="30" height="194" rx="3"/>
+          </g>
+          <rect class="bar-peak" x="581" y="31" width="30" height="219" rx="3"/>
+          <g class="val" text-anchor="middle">
+            <text x="68" y="139">18.2</text><text x="116" y="147">16.9</text><text x="164" y="121">21.4</text><text x="212" y="112">23.0</text>
+            <text x="260" y="103">24.6</text><text x="308" y="117">22.1</text><text x="356" y="96">25.8</text><text x="404" y="87">27.3</text>
+            <text x="452" y="94">26.0</text><text x="500" y="75">29.4</text><text x="548" y="50">33.7</text><text x="596" y="25">38.1</text>
+          </g>
+          <g font-size="12" text-anchor="middle">
+            <text x="68" y="270">Jan</text><text x="116" y="270">Feb</text><text x="164" y="270">Mar</text><text x="212" y="270">Apr</text>
+            <text x="260" y="270">May</text><text x="308" y="270">Jun</text><text x="356" y="270">Jul</text><text x="404" y="270">Aug</text>
+            <text x="452" y="270">Sep</text><text x="500" y="270">Oct</text><text x="548" y="270">Nov</text><text x="596" y="270">Dec</text>
+          </g>
+        </svg>
+      </div>
+    </div>
+
+    <div class="panel">
+      <h2>Revenue by category</h2>
+      <p class="panel-sub">Share of full-year revenue.</p>
+      <svg class="chart" viewBox="0 0 360 230" role="img" aria-label="Bar chart of revenue share by category: Kitchen 38 percent, Living 27, Bedroom 18, Outdoor 11, Other 6">
+        <g class="cat-label">
+          <text x="0" y="27">Kitchen</text><text x="0" y="72">Living</text><text x="0" y="117">Bedroom</text><text x="0" y="162">Outdoor</text><text x="0" y="207">Other</text>
+        </g>
+        <g fill="#eef0f4">
+          <rect x="78" y="12" width="170" height="22" rx="4"/><rect x="78" y="57" width="170" height="22" rx="4"/><rect x="78" y="102" width="170" height="22" rx="4"/><rect x="78" y="147" width="170" height="22" rx="4"/><rect x="78" y="192" width="170" height="22" rx="4"/>
+        </g>
+        <g fill="#2456c7">
+          <rect x="78" y="12" width="170" height="22" rx="4"/>
+          <rect x="78" y="57" width="121" height="22" rx="4"/>
+          <rect x="78" y="102" width="81" height="22" rx="4"/>
+          <rect x="78" y="147" width="49" height="22" rx="4"/>
+          <rect x="78" y="192" width="27" height="22" rx="4"/>
+        </g>
+        <g class="cat-val" text-anchor="end">
+          <text x="360" y="27">38% · $116.5k</text><text x="360" y="72">27% · $82.8k</text><text x="360" y="117">18% · $55.2k</text><text x="360" y="162">11% · $33.7k</text><text x="360" y="207">6% · $18.3k</text>
+        </g>
+      </svg>
+    </div>
+  </section>
+
+  <section class="panel dash-table">
+    <h2>Top products</h2>
+    <p class="panel-sub">Ranked by revenue in the period.</p>
+    <div class="table-scroll">
+      <table class="table">
+        <thead>
+          <tr><th>#</th><th>Product</th><th>Category</th><th class="num">Units</th><th class="num">Unit price</th><th class="num">Revenue</th><th>Share of total</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>1</td><td>Stoneware Mug Set</td><td>Kitchen</td><td class="num">1,240</td><td class="num">$24</td><td class="num">$29,760</td><td><span class="share" style="width:78px"></span>9.7%</td></tr>
+          <tr><td>2</td><td>Linen Throw Blanket</td><td>Living</td><td class="num">410</td><td class="num">$65</td><td class="num">$26,650</td><td><span class="share" style="width:70px"></span>8.7%</td></tr>
+          <tr><td>3</td><td>Cast Iron Skillet</td><td>Kitchen</td><td class="num">520</td><td class="num">$49</td><td class="num">$25,480</td><td><span class="share" style="width:66px"></span>8.3%</td></tr>
+          <tr><td>4</td><td>Oak Serving Board</td><td>Kitchen</td><td class="num">610</td><td class="num">$35</td><td class="num">$21,350</td><td><span class="share" style="width:56px"></span>7.0%</td></tr>
+          <tr><td>5</td><td>Cotton Duvet Cover</td><td>Bedroom</td><td class="num">230</td><td class="num">$89</td><td class="num">$20,470</td><td><span class="share" style="width:54px"></span>6.7%</td></tr>
+          <tr><td>6</td><td>Ceramic Planter</td><td>Outdoor</td><td class="num">540</td><td class="num">$28</td><td class="num">$15,120</td><td><span class="share" style="width:39px"></span>4.9%</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="panel delivers">
+    <h2>What the real deliverable looks like</h2>
+    <p class="panel-sub">This page is a mock rendered as a web page. The actual dashboard is built inside your own Google Sheet.</p>
+    <ul>
+      <li>A dashboard tab with the key numbers, charts and tables shown here, built from your columns</li>
+      <li>Formulas that update the dashboard when you add new rows to your data tab</li>
+      <li>Drop-down filters for period, channel or whatever you track</li>
+      <li>A tidy data tab with consistent dates, currencies and categories</li>
+      <li>A short note explaining where each number comes from</li>
+      <li>Shareable and printable like any other Google Sheet</li>
+    </ul>
+  </section>
+
+  <p class="doc-foot">Sample only. Fernwick Home is not a real business and every figure on this page is made up for illustration.</p>
+
+</main>
+
+</body>
+</html>
